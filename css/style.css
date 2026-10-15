@@ -141,6 +141,7 @@ button:focus-visible {
 }
 
 .menu-toggle {
+  display: none;
   min-height: 2.75rem;
   padding: 0.5rem 0.8rem;
   border: 1px solid var(--color-border);
@@ -1013,4 +1014,68 @@ h1 {
   .form-submit {
     width: 100%;
   }
+}
+
+/* Privacy page */
+.privacy-intro {
+  max-width: 54rem;
+  padding-bottom: clamp(2.5rem, 6vw, 4rem);
+}
+
+.privacy-intro h1 {
+  max-width: 16ch;
+}
+
+.privacy-launch-note {
+  max-width: 50rem;
+  margin-bottom: clamp(2.5rem, 6vw, 4rem);
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid var(--color-accent);
+  background: var(--color-surface);
+}
+
+.privacy-launch-note h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.privacy-launch-note p {
+  margin-bottom: 0;
+  color: var(--color-muted);
+}
+
+.privacy-content {
+  max-width: 50rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.privacy-content section {
+  padding-block: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.privacy-content section h2 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.privacy-content section p {
+  max-width: 45rem;
+  margin-bottom: 0;
+  color: var(--color-muted);
+  line-height: 1.75;
+}
+
+.privacy-content section p + p {
+  margin-top: 0.9rem;
+}
+
+.privacy-updated {
+  margin-top: 1.5rem;
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
 }

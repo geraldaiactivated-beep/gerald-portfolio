@@ -40,6 +40,14 @@ if (siteHeader && menuToggle && primaryNavigation) {
     }
   });
 
+  const mobileNavigation = window.matchMedia("(max-width: 48rem)");
+
+  mobileNavigation.addEventListener("change", (event) => {
+    if (!event.matches) {
+      closeMenu();
+    }
+  });
+
   function updateHeaderOnScroll() {
     siteHeader.classList.toggle("is-compact", window.scrollY > 24);
   }
