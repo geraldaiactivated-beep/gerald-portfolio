@@ -554,3 +554,98 @@ h1 {
     flex-direction: column;
   }
 }
+
+/* Projects page */
+.projects-intro {
+  max-width: 48rem;
+  padding-bottom: clamp(3rem, 7vw, 5rem);
+}
+
+.projects-intro h1 {
+  max-width: none;
+}
+
+.projects-content {
+  border-top: 1px solid var(--color-border);
+}
+
+.projects-empty {
+  max-width: 38rem;
+  margin: 0;
+  padding-block: 2rem;
+  color: var(--color-muted);
+}
+
+.projects-empty[hidden] {
+  display: none;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  padding-block: 2rem;
+}
+
+.project-card {
+  min-width: 0;
+}
+
+.project-card-link {
+  display: block;
+  height: 100%;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.project-card-link:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 5px;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  background: var(--color-surface);
+}
+
+.project-details {
+  padding-top: 1rem;
+}
+
+.project-details h2 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  letter-spacing: -0.025em;
+}
+
+.project-description {
+  max-width: 38rem;
+  margin: 0.65rem 0 0;
+  color: var(--color-muted);
+}
+
+.technology-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  list-style: none;
+}
+
+.project-card-link:hover .project-details h2 {
+  color: var(--color-accent);
+}
+
+@media (max-width: 40rem) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
