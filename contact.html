@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Get in touch with Eguzoro Gerald Chinweotito about a website design and development project."
+    >
+    <title>Contact | Eguzoro Gerald Chinweotito</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/contact-form.js" defer></script>
+  </head>
+
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Eguzoro Gerald Chinweotito — Home">
+          <span class="brand-mark" aria-hidden="true">GC</span>
+          <span class="brand-name">Eguzoro Gerald Chinweotito</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+          hidden
+        >
+          <span aria-hidden="true">Menu</span>
+        </button>
+
+        <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>
+          <a class="nav-contact" href="contact.html" aria-current="page">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="page-content contact-page">
+      <header class="contact-intro">
+        <p class="eyebrow">Contact</p>
+        <h1>Tell me what you’re looking to build.</h1>
+        <p class="intro">
+          You can contact me directly or share a few details about your project
+          using the short form.
+        </p>
+      </header>
+
+      <div class="contact-layout">
+        <section class="direct-contact" aria-labelledby="direct-contact-title">
+          <p class="eyebrow">Direct contact</p>
+          <h2 id="direct-contact-title">Choose how to get in touch.</h2>
+
+          <div class="contact-method">
+            <h3>WhatsApp</h3>
+            <p class="contact-placeholder">
+              WhatsApp link will be added when your number is provided.
+            </p>
+          </div>
+
+          <div class="contact-method">
+            <h3>Email</h3>
+            <p class="contact-placeholder">
+              Email address will be added when you provide it.
+            </p>
+          </div>
+
+          <p class="contact-note">
+            These are placeholders, not working contact links. We’ll replace
+            them with your real details before launch.
+          </p>
+        </section>
+
+        <section class="project-form-section" aria-labelledby="form-title">
+          <p class="eyebrow">Project brief</p>
+          <h2 id="form-title">A few details to get started.</h2>
+          <p class="form-intro">
+            Share only what’s needed to understand the project. Fields marked
+            “required” must be completed.
+          </p>
+
+          <form
+            class="project-form"
+            name="project-brief"
+            method="POST"
+            action="/"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="project-brief">
+
+            <div class="form-honeypot" aria-hidden="true">
+              <label>
+                Leave this field empty:
+                <input
+                  type="text"
+                  name="bot-field"
+                  tabindex="-1"
+                  autocomplete="off"
+                >
+              </label>
+            </div>
+
+            <div class="form-field">
+              <label for="visitor-name">Name <span>(required)</span></label>
+              <input
+                id="visitor-name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
+              >
+            </div>
+
+            <div class="form-field">
+              <label for="project-type">Project type <span>(required)</span></label>
+              <select id="project-type" name="project-type" required>
+                <option value="">Choose an option</option>
+                <option value="New website">New website</option>
+                <option value="Website redesign or improvement">
+                  Website redesign or improvement
+                </option>
+                <option value="Responsive layout or functionality">
+                  Responsive layout or functionality
+                </option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="project-goals">Project goals <span>(required)</span></label>
+              <textarea
+                id="project-goals"
+                name="project-goals"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-field">
+              <label for="project-budget">Approximate budget <span>(optional)</span></label>
+              <input
+                id="project-budget"
+                name="approximate-budget"
+                type="text"
+                autocomplete="off"
+                placeholder="A range and currency, if known"
+              >
+            </div>
+
+            <p
+              class="form-status"
+              id="form-status"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            ></p>
+
+            <button class="button button-primary form-submit" type="submit">
+              Send project brief
+            </button>
+          </form>
+
+          <p class="privacy-note">
+            The information you submit is used to respond to your project
+            enquiry. Read the <a href="privacy.html">Privacy notice</a>.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-name">Eguzoro Gerald Chinweotito</p>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+          <a href="privacy.html">Privacy</a>
+        </nav>
+
+        <p class="footer-role">Web Designer &amp; Developer</p>
+      </div>
+    </footer>
+  </body>
+</html>
