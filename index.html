@@ -9,13 +9,38 @@
     >
     <title>Eguzoro Gerald Chinweotito | Web Designer &amp; Developer</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
   </head>
 
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header class="site-header">
-      <p class="site-name">Eguzoro Gerald Chinweotito</p>
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Eguzoro Gerald Chinweotito — Home">
+          <span class="brand-mark" aria-hidden="true">GC</span>
+          <span class="brand-name">Eguzoro Gerald Chinweotito</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+          hidden
+        >
+          <span aria-hidden="true">Menu</span>
+        </button>
+
+        <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>
+          <a class="nav-contact" href="contact.html">Contact</a>
+        </nav>
+      </div>
     </header>
 
     <main id="main-content" class="page-content">
@@ -29,7 +54,19 @@
     </main>
 
     <footer class="site-footer">
-      <p>Web Designer &amp; Developer</p>
+      <div class="footer-inner">
+        <p class="footer-name">Eguzoro Gerald Chinweotito</p>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy</a>
+        </nav>
+
+        <p class="footer-role">Web Designer &amp; Developer</p>
+      </div>
     </footer>
   </body>
 </html>
