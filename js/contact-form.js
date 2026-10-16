@@ -31,7 +31,7 @@ if (projectForm && formStatus) {
 
       projectForm.reset();
       formStatus.textContent =
-        "Thank you. Your project brief was submitted successfully.";
+  "Your project brief was submitted. For a reply, please contact me using the WhatsApp or email links on this page.";
     } catch (error) {
       formStatus.textContent =
         "The form could not be sent. Your entries are still here; please try again.";
